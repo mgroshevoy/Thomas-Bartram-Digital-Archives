@@ -7,6 +7,7 @@ html{
 body{
     background: #d8f0f3 /*#b0e0e6*/;
     font-family: Georgia !important;
+    font-size:14pt;
 
 }
 a{
@@ -64,6 +65,9 @@ manu_Content{
     text-align: center;
     font-size: 45pt !important;
 }
+.pageNum{
+    font-size:16pt;
+}
 .main{
     text-align: center;
     font-size: 25pt !important;
@@ -97,3 +101,19 @@ hr.sectionDivider{
     font-size: 12pt;
     font-style: italic;
 }
+
+/*Wheeler Journal*/
+.smaller{
+    font-size:11pt;
+}
+span.italics{
+    font-style:italic;
+}
+.footnote{
+    border-style: dashed;
+    border-color: #30909c;
+    border-width: 1px;
+}
+.center{
+    margin:auto;
+} /*RJP: 2017-06-18 not working*/

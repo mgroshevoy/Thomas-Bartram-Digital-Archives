@@ -10,25 +10,29 @@
       <!--Bootstrap CSS-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
       <!--Custom CSS-->
-      <link rel="stylesheet" type="text/css" href="css/style.css" />
-   </head>
+      <link rel="stylesheet" href="css/bootstrap-magnify.css" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" /><script src="js/jquery.js"></script><script src="js/bootstrap.min.js"></script><script src="js/bootstrap-magnify.js"></script><script>
+                        $(document).ready(function() {
+                        $('img')
+                        .filter(function() {
+                        return this.alt.match(/manuscript\simage/);
+                        })
+                        .magnify();
+                        });
+                    </script></head>
    <body>
       <div id="nav">
-         <h1 class="nav">Black Rock Historical Society</h1><a href="index.html">Home</a> |
+         <h1 class="main">
+            1801 - 1838 Merchant and Shipping Account Log Book
+            
+         </h1>
+         <h2 class="main">Authored by Thomas Bartram</h2><a href="index.html">Home</a> |
          <a href="about.html">About</a></div>
-      <div class="row">
-         <div class="col-lg-12">
-            <h1 class="main">1801 - 1838 Merchant and Shipping
-               Account Log Book from Black Rock, Fairfield, Connecticut
-            </h1>
-            <h2 class="main">Authored by Thomas Bartram</h2>
-         </div>
-      </div>
       <div class="col-xs-12">
          <div id="page1" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_001.jpg" target="_blank"><img alt="manuscript image for page 1" src="images/Bartram-Thomas_Vol-001_1801-1819_001.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_001.jpg" target="_blank"><img alt="manuscript image for page 1" src="images/Bartram-Thomas_Vol-001_1801-1819_001.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 1</span>
                
                <div class="section">
@@ -41,9 +45,9 @@
             </div>
          </div>
          <div id="page2" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_002.jpg" target="_blank"><img alt="manuscript image for page 2" src="images/Bartram-Thomas_Vol-001_1801-1819_002.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_002.jpg" target="_blank"><img alt="manuscript image for page 2" src="images/Bartram-Thomas_Vol-001_1801-1819_002.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 2</span>
                
                
@@ -58,9 +62,9 @@
             </div>
          </div>
          <div id="page3" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_003.jpg" target="_blank"><img alt="manuscript image for page 3" src="images/Bartram-Thomas_Vol-001_1801-1819_003.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_003.jpg" target="_blank"><img alt="manuscript image for page 3" src="images/Bartram-Thomas_Vol-001_1801-1819_003.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 3</span>
                
                
@@ -138,17 +142,14 @@
                      </li>
                      <li>
                         <span class="com" title="1 bought brick"></span>Bought of
-                        Daniel Gregory &amp;
-                        Shouland Brick at 5 Dollars Thousand &amp; paid him Forty Dollars
+                        <span class="person">Daniel Gregory</span> <span class="com" title="8000 whole brick">8 Thousand
+                           Brick</span> at 5 Dollars Thousand &amp; paid him Forty Dollars
                         <span class="date" title="1802-02-10">February 10 1802</span>
                         <span class="curr" title="£12 s00 d00">12 0
                            0</span>
                         
                      </li>
-                     <li>
-                        <span class="com" title="6 whole hens">6 pound
-                           Hens</span>
-                        <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 5; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
+                     <li>6 pound tens<span class="hyphen" title="The actual number of hyphens present here in the manuscript is 5; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="curr" title="£00 s06 d00">0 6 0</span>
                         
                      </li>
@@ -164,11 +165,8 @@
                         <span class="curr" title="£00 s09 d00">0 9 0 </span>
                         
                      </li>
-                     <li>
-                        <span class="com" title="1.5 lb hens">one &amp; half pound
-                           <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
-                           <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 2; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
-                           </span>
+                     <li>one &amp; half pound touns<span class="hyphen" title="The actual number of hyphens present here in the manuscript is 2; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
+                        
                         <span class="curr" title="£00 s01 d03">0 1 3 </span>
                         
                      </li>
@@ -210,16 +208,14 @@
                         
                      </li>
                      <li>Joiners &amp; Mason bills <span class="curr" title="£48 s00 d00">48 0 0 </span></li>
-                     <li> Paid <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
-                        <span class="spelling" title="Spelling retained from original manuscript: Nailes">Nails</span> &amp; <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">Glass</span>
-                        <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 2; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
+                     <li> Paid D Jutson Nailes &amp; Glass <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 2; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="curr" title="£01 s01 d00">1 1 0/</span>
                         
                      </li>
-                     <li>
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
-                        <span class="spelling" title="Spelling retained from original manuscript: Nailes">Nails</span>
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
+                     <li><span class="person">S Perry</span>
+                        <span class="spelling" title="Spelling retained from original manuscript: Nailes">Nails</span> <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">Bill &amp; Timber
+                           </span>
+                        
                         <span class="curr" title="£06 s00 d00">6 0 0</span>
                         
                      </li>
@@ -227,37 +223,36 @@
                         <span class="curr" title="£12 s00 d00">12 0
                            0</span></li>
                      <li>
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Stone <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 2; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
+                        <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">underpinning
+                           </span> Stone <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 2; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="curr" title="£08 s00 d00">8 0
                            0</span></li>
-                     <li> 15 Hundred feed Boards <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
+                     <li> 15 Hundred feet Boards <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="curr" title="£07 s00 d00">7 0
                            0</span></li>
                      <li> Making Fence &amp; Nailes <span class="curr" title="£04 s00 d00">4 0 0</span></li>
-                     <li> paints &amp; <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
+                     <li> paints &amp; Painter Bill
                         <span class="curr" title="£15 s00 d00">15 0
                            0</span></li>
                      <li>
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Stones &amp;
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
-                        <span class="curr" title="£02 s10 d00">2 10
-                           0</span></li>
-                     <li> Drying <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
+                        <span class="spelling" title="Spelling retained from original manuscript: harth">hearth</span> Stones &amp; and Mason Bill
+                        <span class="curr" title="£02 s10 d00">2 10 0</span></li>
+                     <li><span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear."><span class="spelling" title="Spelling retained from original manuscript: digin ">digging</span> 
+                           <span class="spelling" title="Spelling retained from original manuscript: Seller">cellar</span> &amp; well
+                           </span>
                         <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="curr" title="£05 s00 d00">5 0
                            0</span></li>
                      <li> floor Boards <span class="curr" title="£06 s00 d00">6
                            </span></li>
                      <li>
-                        <span class="spelling" title="Spelling retained from original manuscript: Nailes">Nails</span> for floor &amp; <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">inside work</span>
+                        <span class="spelling" title="Spelling retained from original manuscript: Nailes">Nails</span> for floor &amp; inside work
                         <span class="curr" title="£03 s00 d00">3 0
                            0</span></li>
                      <li>hinges for Doors <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="curr" title="£01 s10 d00">1 10 --
                            </span></li>
-                     <li>
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Boards of Short
-                        Shingles <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
+                     <li>Clear Boards of Short Shingles <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
                         
                      </li>
                      <li><span class="com" title="2000 whole bricks">2 thousand
@@ -265,8 +260,7 @@
                         <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="curr" title="£10 s10 d00">10 10
                            </span></li>
-                     <li> Boarding <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
-                        &amp; <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>bill
+                     <li> Boarding Joiner &amp; grog bill
                         <span class="curr" title="£30 s00 d00">30 0
                            0</span></li>
                   </ul>
@@ -304,9 +298,9 @@
             </div>
          </div>
          <div id="page4" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_004.jpg" target="_blank"><img alt="manuscript image for page 4" src="images/Bartram-Thomas_Vol-001_1801-1819_004.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_004.jpg" target="_blank"><img alt="manuscript image for page 4" src="images/Bartram-Thomas_Vol-001_1801-1819_004.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 4</span>
                
                <div class="section">
@@ -330,8 +324,7 @@
                         <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 41 1/4 <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">2/9</span> Paid
                      </li>
-                     <li><span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span><span class="person">
-                           Squire</span>
+                     <li><span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span><span class="person">Nabby Squire</span>
                         
                         <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 6 6 <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">2/9</span></li>
@@ -340,10 +333,10 @@
                         <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 30<span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">2/9</span> Paid
                      </li>
-                     <li><span class="person"> Eben Bartram</span> 26 <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">3/4</span> No hay 600 
+                     <li><span class="person"> Eben Bartram</span> 26 <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">2/4</span> No hay 600 
                      </li>
                      <li><span class="person">John Wheeler</span>
-                        <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 10 <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>No hay
+                        <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 10 <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>No pay
                         120
                      </li>
                      <li><span class="person">Job Bartram</span> 8 2/1 paid
@@ -361,9 +354,9 @@
                      </li>
                      <li><span class="person"> David Judson</span>
                         <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 18 /<span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
-                        <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">No&gt;</span> hay 
+                        <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">No&gt;</span> paid 
                      </li>
-                     <li>Ebezebot watron 3 No hay </li>
+                     <li>Elezebet watson 3 No hay </li>
                      <li><span class="person">Joseph Sturges</span> and others 65
                         1/4 paid
                      </li>
@@ -371,7 +364,7 @@
                         paid
                      </li>
                      <li><span class="person">M Risley</span>
-                        <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 4 <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">No&gt;</span> hay paid
+                        <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 4 <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">No pay</span> paid
                      </li>
                      <li><span class="person"></span>Will Thorp <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 6
                         No hay
@@ -397,16 +390,16 @@
             </div>
          </div>
          <div id="page5" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_005.jpg" target="_blank"><img alt="manuscript image for page 5" src="images/Bartram-Thomas_Vol-001_1801-1819_005.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_005.jpg" target="_blank"><img alt="manuscript image for page 5" src="images/Bartram-Thomas_Vol-001_1801-1819_005.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 5</span>
                
                <div class="section">
                   <hr class="sectionDivider" /><span class="sectionHead">Credit</span><span class="entryHead">
                      <span class="date" title="1801-10"></span>
                      </span><ul class="entries">
-                     <li>By <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Cart with
+                     <li>By hiring Cart with
                         my help
                      </li>
                   </ul><span class="entryHead">
@@ -416,7 +409,7 @@
                   </ul><span class="entryHead">
                      <span class="date" title="1801-12">December 1801</span>
                      </span><ul class="entries">
-                     <li>By <span class="spelling" title="Spelling retained from original manuscript: Seting">Setting</span> ox my help
+                     <li>By <span class="spelling" title="Spelling retained from original manuscript: Seting">Setting</span> ox Shews my help
                      </li>
                   </ul>
                   <ul class="entries">
@@ -433,11 +426,9 @@
                   </ul><span class="entryHead">
                      <span class="date" title="1809-07">July 1809</span></span><ul class="entries">
                      <li> 1685 Cash<span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
-                        222 Dollars
-                        cash
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> gave Seth Perry
-                        1907 to go to N york to <span class="spelling" title="Spelling retained from original manuscript: by">buy</span> cargo
+                        <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">Plaster</span>
+                        222 Dollars cash Boston
+                        gave Seth Perry 1907 to go to N york to <span class="spelling" title="Spelling retained from original manuscript: by">buy</span> cargo
                      </li>
                   </ul>
                   <ul class="entries">
@@ -446,15 +437,20 @@
                      <li>Two drafts Drawn by John wait briant boston for 
                         1840
                      </li>
-                     <li>For  1840 freight to <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span></li>
-                     <li>Due from Lynde Walter boston 45.00 </li>
-                     <li>Due from tmas Lock 66.00</li>
+                     <li>For  1840 freight to 
+                        <span class="unclear" title="The text provided here was interpreted by a project editor (ID: RF) because the transcription source was unclear.">Newy
+                           </span>New York
+                     </li>
+                     <li>Due from <span class="person">Lynde Walter</span> boston 45.00 
+                     </li>
+                     <li>Due from <span class="person">Amos Lock</span> 66.00
+                     </li>
                      <li>wool sold for <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>1955.00
                      </li>
                      <li>Left at Home Cash <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span></li>
-                     <li>gave Seth Perry <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 550
+                     <li>gave <span class="person">Seth Perry</span> <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 550
                      </li>
-                     <li><span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Novemeber 13
+                     <li>David ed Novemeber 13
                         <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 1; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span>
                         
                      </li>
@@ -467,9 +463,9 @@
                      </span><ul class="entries">
                      <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Cash paid will Hayt for paints to paint house $94 75
                      </li>
-                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Cash paid to Elijah Turney for work painting House 6 00
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Cash paid to <span class="person">Elijah Turney</span> for work painting House 6 00
                      </li>
-                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Cash paid to  Squire Nichols for <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Lead 83
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Cash paid to  Squire Nichols for white Lead 83
                      </li>
                   </ul>
                </div>
@@ -477,9 +473,9 @@
             </div>
          </div>
          <div id="page6" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_006.jpg" target="_blank"><img alt="manuscript image for page 6" src="images/Bartram-Thomas_Vol-001_1801-1819_006.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_006.jpg" target="_blank"><img alt="manuscript image for page 6" src="images/Bartram-Thomas_Vol-001_1801-1819_006.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 6</span>
                
                <div class="section">
@@ -703,7 +699,7 @@
                         
                      </li>
                      <li>
-                        <span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> set two <span class="spelling" title="Spelling retained from original manuscript: shews">shoes</span>
+                        <span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> set two<span class="spelling" title="Spelling retained from original manuscript: shews">shoes</span>
                         <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
                         <span class="curr" title="£00 s01 d06">0 1 6</span>
                         
@@ -725,9 +721,9 @@
             </div>
          </div>
          <div id="page7" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_007.jpg" target="_blank"><img alt="manuscript image for page 7" src="images/Bartram-Thomas_Vol-001_1801-1819_007.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_007.jpg" target="_blank"><img alt="manuscript image for page 7" src="images/Bartram-Thomas_Vol-001_1801-1819_007.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 7</span>
                
                <div class="section">
@@ -848,9 +844,9 @@
             </div>
          </div>
          <div id="page8" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_008.jpg" target="_blank"><img alt="manuscript image for page 8" src="images/Bartram-Thomas_Vol-001_1801-1819_008.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_008.jpg" target="_blank"><img alt="manuscript image for page 8" src="images/Bartram-Thomas_Vol-001_1801-1819_008.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 8</span>
                
                <div class="section">
@@ -937,9 +933,9 @@
             </div>
          </div>
          <div id="page9" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_009.jpg" target="_blank"><img alt="manuscript image for page 9" src="images/Bartram-Thomas_Vol-001_1801-1819_009.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_009.jpg" target="_blank"><img alt="manuscript image for page 9" src="images/Bartram-Thomas_Vol-001_1801-1819_009.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 9</span>
                
                <div class="section">
@@ -976,9 +972,9 @@
             </div>
          </div>
          <div id="page10" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_010.jpg" target="_blank"><img alt="manuscript image for page 10" src="images/Bartram-Thomas_Vol-001_1801-1819_010.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_010.jpg" target="_blank"><img alt="manuscript image for page 10" src="images/Bartram-Thomas_Vol-001_1801-1819_010.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 10</span>
                
                <div class="section">
@@ -1038,9 +1034,9 @@
             </div>
          </div>
          <div id="page11" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_011.jpg" target="_blank"><img alt="manuscript image for page 11" src="images/Bartram-Thomas_Vol-001_1801-1819_011.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_011.jpg" target="_blank"><img alt="manuscript image for page 11" src="images/Bartram-Thomas_Vol-001_1801-1819_011.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 11</span>
                
                <div class="section">
@@ -1107,9 +1103,9 @@
             </div>
          </div>
          <div id="page12" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_012.jpg" target="_blank"><img alt="manuscript image for page 12" src="images/Bartram-Thomas_Vol-001_1801-1819_012.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_012.jpg" target="_blank"><img alt="manuscript image for page 12" src="images/Bartram-Thomas_Vol-001_1801-1819_012.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 12</span>
                
                
@@ -1239,9 +1235,9 @@
             </div>
          </div>
          <div id="page13" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_013.jpg" target="_blank"><img alt="manuscript image for page 13" src="images/Bartram-Thomas_Vol-001_1801-1819_013.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_013.jpg" target="_blank"><img alt="manuscript image for page 13" src="images/Bartram-Thomas_Vol-001_1801-1819_013.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 13</span>
                
                <div class="section">
@@ -1306,16 +1302,16 @@
                         0 1 
                         
                      </li>
-                     <li>By horse to Millriver &amp; Wheeler Hill</li>
+                     <li>By horse to Mill River &amp; Wheeler Hill</li>
                   </ul>
                </div>
                
             </div>
          </div>
          <div id="page14" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_014.jpg" target="_blank"><img alt="manuscript image for page 14" src="images/Bartram-Thomas_Vol-001_1801-1819_014.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_014.jpg" target="_blank"><img alt="manuscript image for page 14" src="images/Bartram-Thomas_Vol-001_1801-1819_014.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 14</span>
                
                <div class="section">
@@ -1360,7 +1356,7 @@
                   <hr class="sectionDivider" /><span class="sectionHead"><span class="person">Miah Perry</span><span class="afterName" title="A symbol appears here after this proper name that we speculate indicates a signature."> * </span></span><span class="entryHead">
                      <span class="date" title="1805-12">Decem 1805</span>
                      </span><ul class="entries">
-                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Cash paid Uriah Buckley  11 6 
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Cash paid <span class="person">Uriah Buckley </span> 11 6 
                      </li>
                   </ul>
                </div>
@@ -1368,9 +1364,9 @@
             </div>
          </div>
          <div id="page15" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_015.jpg" target="_blank"><img alt="manuscript image for page 15" src="images/Bartram-Thomas_Vol-001_1801-1819_015.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_015.jpg" target="_blank"><img alt="manuscript image for page 15" src="images/Bartram-Thomas_Vol-001_1801-1819_015.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 15</span>
                
                <div class="section">
@@ -1417,9 +1413,9 @@
             </div>
          </div>
          <div id="page16" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_016.jpg" target="_blank"><img alt="manuscript image for page 16" src="images/Bartram-Thomas_Vol-001_1801-1819_016.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_016.jpg" target="_blank"><img alt="manuscript image for page 16" src="images/Bartram-Thomas_Vol-001_1801-1819_016.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 16</span>
                
                <div class="section">
@@ -1434,9 +1430,9 @@
             </div>
          </div>
          <div id="page17" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_017.jpg" target="_blank"><img alt="manuscript image for page 17" src="images/Bartram-Thomas_Vol-001_1801-1819_017.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_017.jpg" target="_blank"><img alt="manuscript image for page 17" src="images/Bartram-Thomas_Vol-001_1801-1819_017.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 17</span>
                
                <div class="section">
@@ -1453,9 +1449,9 @@
             </div>
          </div>
          <div id="page18" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_018.jpg" target="_blank"><img alt="manuscript image for page 18" src="images/Bartram-Thomas_Vol-001_1801-1819_018.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_018.jpg" target="_blank"><img alt="manuscript image for page 18" src="images/Bartram-Thomas_Vol-001_1801-1819_018.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 18</span>
                
                <div class="section">
@@ -1469,9 +1465,9 @@
             </div>
          </div>
          <div id="page19" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_019.jpg" target="_blank"><img alt="manuscript image for page 19" src="images/Bartram-Thomas_Vol-001_1801-1819_019.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_019.jpg" target="_blank"><img alt="manuscript image for page 19" src="images/Bartram-Thomas_Vol-001_1801-1819_019.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 19</span>
                
                <div class="section">
@@ -1484,9 +1480,9 @@
             </div>
          </div>
          <div id="page20" class="col-xs-12 page">
-            <div class="manu_Image col-xs-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_020.jpg" target="_blank"><img alt="manuscript image for page 20" src="images/Bartram-Thomas_Vol-001_1801-1819_020.jpg" /></a></div>
-            <div class="col-xs-2"></div>
-            <div class="manu_Content col-xs-6">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_020.jpg" target="_blank"><img alt="manuscript image for page 20" src="images/Bartram-Thomas_Vol-001_1801-1819_020.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
                <hr class="pageDivider" /><span class="pageNum">Page 20</span>
                
                <div class="section">
@@ -1514,10 +1510,76 @@
                         <span class="curr" title="£11 s07 d00">11 7 0</span></li>
                      <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
                         <span class="curr" title="£01 s04 d06">0 4 6</span></li>
-                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Bush Coal &amp; 
-                        <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
                         <span class="curr" title="£01 s07 d00">0 7 0</span>
                         
+                     </li>
+                  </ul>
+               </div>
+               
+            </div>
+         </div>
+         <div id="page21" class="col-xs-12 page">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_021.jpg" target="_blank"><img alt="manuscript image for page 21" src="images/Bartram-Thomas_Vol-001_1801-1819_021.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
+               <hr class="pageDivider" /><span class="pageNum">Page 21</span>
+               
+               <div class="section">
+                  <hr class="sectionDivider" /><span class="sectionHead">Credit</span><span class="entryHead">
+                     <span class="date" title="1802-05">May 1802</span>
+                     </span><ul class="entries">
+                     <li>Buy 6 Acres Planting ground at 5 Dollars <span class="curr" title="£10 s10 d00">10 10 0</span></li>
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Cash
+                     </li>
+                  </ul>
+               </div>
+               
+            </div>
+         </div>
+         <div id="page22" class="col-xs-12 page">
+            <div class="manu_Image col-md-4"><a href="images/Bartram-Thomas_Vol-001_1801-1819_022.jpg" target="_blank"><img alt="manuscript image for page 22" src="images/Bartram-Thomas_Vol-001_1801-1819_022.jpg" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="manu_Content col-md-6">
+               <hr class="pageDivider" /><span class="pageNum">Page 22</span>
+               
+               <div class="section">
+                  <hr class="sectionDivider" /><span class="sectionHead"><span class="person">William Morehourse</span></span><span class="entryHead">
+                     <span class="date" title="1799-09-22">Sept 29 1799</span>
+                     </span><ul class="entries">
+                     <li>To Shear Sheep 1/ To Set <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
+                        <span class="curr" title="£10 s10 d00">10 10 0</span>
+                        
+                     </li>
+                  </ul><span class="entryHead"><span class="date" title="1799-12">Decd 1799</span></span><ul class="entries">
+                     <li>To Set Shears <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span><span class="curr" title="£00 s01 d00">0 1 0</span></li>
+                     <li>To Shoeing horse New <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>toes <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 2; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span> 
+                        <span class="curr" title="£00 s06 d00">0 6 0</span></li>
+                  </ul><span class="entryHead"><span class="date" title="1800-11">Nov 1800</span></span><ul class="entries">
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span>Make handle iron <span class="hyphen" title="The actual number of hyphens present here in the manuscript is 3; however, we have standardized the number of hyphens appearing here for the sake of web formatting.">- - -</span><span class="curr" title="£00 s01 d00">0 1 0</span></li>
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Shoeing horse New my iron &amp; Steel <span class="curr" title="£00 s03 d00"> 0 3 0</span></li>
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Lumbers /6 to Lay and 4/ 
+                        <span class="curr" title="£00 s04 d06">0 4 6</span></li>
+                  </ul><span class="entryHead"><span class="date" title="1801-03">March 1801</span></span><ul class="entries">
+                     <li>Long yoakyoke &amp; Staple
+                        <span class="curr" title="£00 s02 d00">0 2 0</span></li>
+                  </ul><span class="entryHead"><span class="date" title="1801-04">April</span></span><ul class="entries">
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Sowing 4 Stark ground <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span>
+                        
+                     </li>
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> Lay ax to Mend Chain0 5 6
+                     </li>
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> one <span class="spelling" title="Spelling retained from original manuscript: yoak">yoke</span></li>
+                  </ul><span class="entryHead"><span class="date" title="1803-01">January 1803</span></span><ul class="entries">
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> 3 Leaden tubs for washing
+                        1 8 0
+                     </li>
+                  </ul><span class="entryHead"><span class="date" title="1803-07">July 1803</span></span><ul class="entries">
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> use of Cart Six month
+                        0 18 0
+                     </li>
+                     <li><span class="stItem" title="A symbol appears here before the start of most logged items. It bears resemblance to the word To, and seems to be the way Bartram noted new entries.">To</span> 2 <span class="spelling" title="Spelling retained from original manuscript: Busl">Bushel</span>
+                        Rye <span class="unclear" title="The text is unclear and could not be transcribed. Reason: illegible."> [MISSING TEXT] </span> Sowing Lot half acre Middlebrooks
                      </li>
                   </ul>
                </div>
